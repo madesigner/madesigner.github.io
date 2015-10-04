@@ -1,9 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title> Hello World! </title>
-  </head>
-  <body>
-    Hello World
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Murtaza Abbasi</title>
+
+<meta charset="utf-8">
+<meta name="description" content="I'm Murtaza Abbasi, Front-end developer and Graphic Designer">
+<meta name="keywords" content="Murtaza Abbasi, Designer. Coder, Front-end Developer, Pakistan">
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="icon" href="images/ma-logo-blue.png">
+</head>
+
+<body onResize="resize()">
+<div id="logocon">
+<img id="logo" src="images/ma-logo.png">
+</div>
+<p id="para">I'm Coming</p>
+<div id="socialIcon">
+	<a href="https://twitter.com/gmadesignerc" target="_blank"><img id="twitter" src="images/twitter.png"></a>
+    <a title="I need Dribbble Invitation" href="https://dribbble.com/gmadesigner" target="_blank"><img id="dribbble" src="images/dribbble.png"></a>
+</div>
+
+<script>
+var container = document.getElementById("logocon"),
+	social = document.getElementById("socialIcon");
+	
+var resize = function(){
+var	conLeft = (window.innerWidth - 150) * 50 / 100 + 'px';
+	container.style.left = conLeft;
+	social.style.left = conLeft;
+	}
+resize();
+</script>
+</body>
 </html>

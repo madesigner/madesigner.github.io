@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro);
+* {
+	padding:0;
+	margin:0;
+	
+	-webkit-transition:500ms height ease,
+				500ms background-color ease;
+	-o-transition:500ms height ease,
+				500ms background-color ease;
+	-moz-transition:500ms height ease,
+				500ms background-color ease;
+	transition:500ms height ease,
+				500ms background-color ease;
+	
+	font-family: 'Advent Pro', sans-serif;
+}
+
+body {
+	animation-name:coloring;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+	
+	background-color:#F0F0F0;
+}
+@keyframes coloring {
+	25% {background-color:#E8F1F7};
+	50% {background-color:#EDDEFA};
+	75% {background-color:#FEEBF9};
+	100% {background-color:#F0F0F0};
+}
+
+#logocon {
+	position:absolute;
+	top:0;
+	width:150px;
+	height:40%;
+	background-color:#5AC8E2;
+}
+#logocon:hover {
+	height:45%;
+	background-color:#000;
+}
+#logo {
+	position:absolute;
+	width:120px;
+	min-width:120px;
+	height:auto;
+	bottom:15px;
+	left:15px;
+}
+#para {
+	font-size:50px;
+	font-weight:100;
+	color:#333;
+	position:absolute;
+	top:55%;
+	width:100%;
+	text-align:center;
+	height:auto;
+}
+#socialIcon {
+	width: 150px;
+	position:absolute;
+	bottom:0;
+	left:45%;
+	height:60px;
+}
+#twitter {
+	position:absolute;
+	top:0;
+	left:35px;
+}
+#dribbble {
+	position:absolute;
+	top:0;
+	right:35px;
+}
+#twitter, #dribbble {
+	transition:500ms filter ease;
+	-webkit-transition:500ms -webkit-filter ease;
+	-moz-transition:500ms -moz-filter ease;
+	-o-transition:500ms -o-filter ease;
+	
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}	
+#twitter:hover, #dribbble:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+}
