@@ -95,3 +95,37 @@ body {
 	-moz-filter: grayscale(0);
 	-o-filter: grayscale(0);
 }
+
+.notify {
+	animation-name:drib-notify;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+}
+
+@keyframes drib-notify {
+	25%{
+		filter:grayscale(0);
+		-webkit-filter:grayscale(0);
+		-moz-filter:grayscale(0);
+		-o-filter:grayscale(0);
+	}
+	%50{
+		filter:grayscale(1);
+		-webkit-filter:grayscale(1);
+		-moz-filter:grayscale(1);
+		-o-filter:grayscale(1);
+	}
+	%75{
+		filter:grayscale(0);
+		-webkit-filter:grayscale(0);
+		-moz-filter:grayscale(0);
+		-o-filter:grayscale(0);
+	}
+	100%{
+		filter:grayscale(1);
+		-webkit-filter:grayscale(1);
+		-moz-filter:grayscale(1);
+		-o-filter:grayscale(1);
+	}
+}
