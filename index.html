@@ -33,7 +33,21 @@ var	conLeft = (window.innerWidth - 150) * 50 / 100 + 'px';
 	social.style.left = conLeft;
 	}
 resize();
+
+/* Scripting for notifying user to dribbble icon */
+var dribbble = document.getElementById("dribbble");
+
+setInterval(function(){notify()}, 5000)
+var notify = function(){
+    dribbble.className = 'notify';
+
+    setTimeout(function(){remove()}, 1500)
+    var remove = function(){
+      dribbble.className = '#';
+    }
+}
 </script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
