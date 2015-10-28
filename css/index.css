@@ -129,3 +129,36 @@ body {
 		-o-filter:grayscale(1);
 	}
 }
+a + label {
+	transition:500ms all ease;
+	-webkit-transition:500ms all ease;
+	-moz-transition:500ms all ease;
+	-o-transition:500ms all ease;
+	
+	position:absolute;
+	width:170px;
+	padding:10px 0;
+	text-align:center;
+	border-left:2px solid lightgrey;
+	top:-5px;
+	right:-170px;
+	opacity:0;
+}
+a + label::before {
+	content:"";
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	border-bottom:7px solid lightgrey;
+	position:absolute;
+	top:16px;
+	left:-12px;;
+	
+	transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+}
+a:hover + label {
+	opacity:1;
+	right:-155px;
+}
